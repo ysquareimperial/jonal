@@ -1,0 +1,52 @@
+.body_ {
+  background-color: #f4f5f7;
+  /* height: 100vh; */
+}
+
+* {
+  /* font-family: "Lora", serif; */
+  font-family: "Poppins", sans-serif;
+  /* font-family: "Quicksand", sans-serif; */
+}
+
+.dashboard_card,
+.secondcards {
+  background-color: white !important;
+  border: none !important;
+  border-radius: 20px !important;
+}
+.blnc {
+  font-weight: bold;
+  font-size: 20px;
+}
+.pcnt {
+  background-color: #f4f5f7;
+  width: fit-content;
+  padding: 5px 30px;
+  border-radius: 20px;
+}
+._fdfd {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loss {
+  color: rgb(221, 15, 49);
+}
+
+._firstcards {
+  height: 30vh !important;
+}
+
+.bull_bnt {
+  font-weight: bold;
+  color: grey;
+  border-radius: 5px;
+  border: none;
+  font-size: 13px;
+  padding: 5px 10px;
+}
+.dash_cards_title {
+  font-size: 13px;
+  color: grey;
+}
