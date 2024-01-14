@@ -1,12 +1,13 @@
 .body_ {
   background-color: #f4f5f7;
   /* height: 100vh; */
+  font-size: 13px !important;
 }
-
 * {
-  /* font-family: "Lora", serif; */
+  font-family: "Lora", serif;
+  font-family: "Nunito", sans-serif;
   font-family: "Poppins", sans-serif;
-  /* font-family: "Quicksand", sans-serif; */
+  font-family: "Quicksand", sans-serif;
 }
 
 .dashboard_card,
@@ -49,4 +50,50 @@
 .dash_cards_title {
   font-size: 13px;
   color: grey;
+}
+
+.sidebar_col {
+  border-right: 1px dashed grey;
+  /* background-color: red; */
+  /* background-color: red; */
+  height: 100%;
+}
+
+.sidebar_user_div {
+  background-color: white;
+  border-radius: 10px;
+  /* margin: 1px; */
+}
+
+.side_bar_menu {
+  padding: 15px;
+  font-size: 13px;
+}
+.side_bar_menu:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
+.active_side_bar_menu {
+  background-color: white;
+  border-right: 5px solid #1d2732;
+  border-top-left-radius: 5px;
+}
+.intro_{
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 575.98px) {
+  ._eeee {
+    height: fit-content !important;
+  }
+  .intro_{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .sidebar_col{
+    /* display: none; */
+  }
 }
