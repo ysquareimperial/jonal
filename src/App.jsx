@@ -3,6 +3,8 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import { Button, Card, Col, Row } from "reactstrap";
+// import DashboardPieChart from "./charts/DashboardPieChart";
+import Chart from "./charts/Chart";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -127,6 +129,9 @@ function App() {
             <Col md={4}>
               <Card className="secondcards p-4">
               <p className="dash_cards_title">Win Rate</p>
+              {/* <DashboardPieChart/> */}
+              ddd
+              {/* <Chart/> */}
               </Card>
             </Col>
             <Col md={4}>
