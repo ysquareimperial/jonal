@@ -21,7 +21,9 @@ function Journal() {
           <p>
             <b>New Trade</b>
           </p>
-
+          <div>
+            <p>General Trade Data</p>
+          </div>
           <div>
             <p>Trade Entry</p>
           </div>
