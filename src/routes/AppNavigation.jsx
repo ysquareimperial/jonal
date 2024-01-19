@@ -2,14 +2,14 @@ import { useRoutes } from "react-router-dom";
 import Dashboard from "../components/Dashboard";
 import Sidebar from "../components/Sidebar";
 import AppIndex from "./AppIndex";
-import Journal from "./Journal";
-import Calendar from "../components/Calendar";
 import Milestone from "../components/Milestone";
 import Notes from "../components/Notes";
 import Settings from "../components/Settings";
 import Charts from "../components/Charts";
 import Reports from "../components/Reports";
 import TradingPlan from "../components/TradingPlan";
+import MyCalendar from "../components/MyCalendar";
+import Journal from "../components/Journal";
 
 function AppNavigation() {
   let element = useRoutes([
@@ -33,7 +33,7 @@ function AppNavigation() {
         },
         {
           path: "/calendar",
-          element: <Calendar />,
+          element: <MyCalendar />,
         },
         {
           path: "/milestone",
@@ -44,9 +44,9 @@ function AppNavigation() {
           element: <Reports />,
         },
         {
-            path: "/trading-plan",
-            element: <TradingPlan />,
-          },
+          path: "/trading-plan",
+          element: <TradingPlan />,
+        },
         {
           path: "/notes",
           element: <Notes />,

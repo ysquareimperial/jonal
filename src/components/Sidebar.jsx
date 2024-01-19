@@ -9,7 +9,7 @@ import { LuPencilLine } from "react-icons/lu";
 import { GoMilestone } from "react-icons/go";
 import { TbReportAnalytics } from "react-icons/tb";
 import { IoSettingsOutline } from "react-icons/io5";
-import { GrPlan } from "react-icons/gr";    
+import { GrPlan } from "react-icons/gr";
 export default function Sidebar() {
   const navigate = useNavigate();
   const location = useLocation();
