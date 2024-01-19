@@ -23,13 +23,13 @@ function Journal() {
           </p>
 
           <div>
-            <p>General Trade Data</p>
+            <p>Trade Entry</p>
           </div>
           <div>
             <p></p>
           </div>
           <div>
-            <p>Exit Data</p>
+            <p>Trade Exit</p>
           </div>
         </div>
       </Modal>
