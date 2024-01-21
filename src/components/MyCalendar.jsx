@@ -23,10 +23,8 @@ function MyCalendar() {
       // Add more date-label mappings as needed
     };
 
-   
-
     return (
-      <div className={`${labels[day] === "loss" && "bg-danger"}`}>
+      <div className={`${labels[day] === "loss" && "danger"}`}>
         {/* <div>{day}</div> */}
         {labels[day] && <div>{labels[day]}</div>}
         {/* Add more content as needed */}
@@ -35,7 +33,7 @@ function MyCalendar() {
   };
   const tileClassName = ({ date, view }) => {
     // Customize the class for each date tile
-    return date.getTime() === selectedDate.getTime() ? 'custom-active' : '';
+    return date.getTime() === selectedDate.getTime() ? "custom-active" : "";
   };
   return (
     <div style={{ height: "100vh" }}>

@@ -89,40 +89,6 @@ function Journal() {
               <td className="loss_row">1</td>
               <td className="loss_row">-1</td>
             </tr>
-            <tr>
-              <td className="" scope="row">
-                EUR/USD
-              </td>
-              <td className="">Breakout</td>
-              <td className="">Buy</td>
-              <td className="">12/12/2023 . 15:00</td>
-              <td className="">12/12/2023 . 15:00</td>
-              <td className="">1.1101</td>
-              <td className="">1.1120</td>
-              <td className="">1.1130</td>
-              <td className="">1.1090</td>
-              <td className="">-200</td>
-              <td className="">-1</td>
-              <td className="">1</td>
-              <td className="">-1</td>
-            </tr>{" "}
-            <tr>
-              <td className="" scope="row">
-                EUR/USD
-              </td>
-              <td className="">Breakout</td>
-              <td className="">Buy</td>
-              <td className="">12/12/2023 . 15:00</td>
-              <td className="">12/12/2023 . 15:00</td>
-              <td className="">1.1101</td>
-              <td className="">1.1120</td>
-              <td className="">1.1130</td>
-              <td className="">1.1090</td>
-              <td className="">-200</td>
-              <td className="">-1</td>
-              <td className="">1</td>
-              <td className="">-1</td>
-            </tr>
           </tbody>
         </Table>
       </div>
