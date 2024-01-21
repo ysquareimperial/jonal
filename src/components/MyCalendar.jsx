@@ -33,7 +33,7 @@ function MyCalendar() {
   };
   const tileClassName = ({ date, view }) => {
     // Customize the class for each date tile
-    return date.getTime() === selectedDate.getTime() ? "custom-active" : "";
+    return date.getTime() === selectedDate.getTime() ? "bg-white text-black tile__" : "";
   };
   return (
     <div style={{ height: "100vh" }}>
