@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Modal, Table } from "reactstrap";
+import InputField from "./CustomComponents/InputField";
 
 function Journal() {
   const [modal, setModal] = useState(false);
@@ -22,7 +23,45 @@ function Journal() {
             <b>New Trade</b>
           </p>
           <div>
-            <p>General Trade Data</p>
+            <p className="m-0">General Trade Data</p>
+            <div className="mt-2">
+              <InputField
+                htmlFor={"entry_data"}
+                inputLabel={"Entry Date"}
+                inputId={"entry_date"}
+                inputType={"datetime-local"}
+                // inputValue={email}
+                // onChange={(e) => setEmail(e.target.value)}
+              />
+            </div>
+            <div className="mt-2">
+              <label htmlFor="" style={{ fontWeight: "bold" }}>
+                Instrument
+              </label>
+              <select id="currencyPairs" className="app_input">
+                <option value="EURUSD">--</option>
+                <option value="EURUSD">EUR/USD</option>
+                <option value="USDJPY">USD/JPY</option>
+                <option value="GBPUSD">GBP/USD</option>
+                <option value="USDCHF">USD/CHF</option>
+                <option value="AUDUSD">AUD/USD</option>
+                <option value="USDCAD">USD/CAD</option>
+                <option value="NZDUSD">NZD/USD</option>
+
+                <option value="EURGBP">EUR/GBP</option>
+                <option value="EURAUD">EUR/AUD</option>
+                <option value="GBPJPY">GBP/JPY</option>
+                <option value="AUDJPY">AUD/JPY</option>
+                <option value="NZDJPY">NZD/JPY</option>
+                <option value="CADCHF">CAD/CHF</option>
+              </select>
+            </div>
+            <div className="mt-2">
+              <label htmlFor="" style={{ fontWeight: "bold" }}>
+                Direction
+              </label>
+              <input type="radio" />
+            </div>
           </div>
           <div>
             <p>Trade Entry</p>
