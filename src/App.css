@@ -32,7 +32,7 @@
   align-items: center;
 }
 .loss {
-  color: rgb(221, 15, 49);
+  color: rgb(59, 5, 14);
 }
 
 ._firstcards {
@@ -140,7 +140,7 @@
 }
 
 .danger{
-  background-color: #F6BEBF;
+  background-color: rgb(192, 176, 176), 176, 176);
   border: 2px solid #C18C8D;
   border-radius: 3px;
   height: 50px;
