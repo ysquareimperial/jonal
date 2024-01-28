@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Modal, Table } from "reactstrap";
+import InputField from "./CustomComponents/InputField";
 
 function Journal() {
   const [modal, setModal] = useState(false);
@@ -22,11 +23,80 @@ function Journal() {
             <b>New Trade</b>
           </p>
           <div>
-            <p>General Trade Data</p>
+            <p className="m-0">General Trade Data</p>
+            <div className="">
+              <InputField
+                htmlFor={"entry_date"}
+                inputLabel={"Entry Date"}
+                inputId={"entry_date"}
+                inputType={"datetime-local"}
+              // inputValue={email}
+              // onChange={(e) => setEmail(e.target.value)}
+              />
+            </div>
+            <div className="mt-2">
+              <label htmlFor="currencyPairs" style={{ fontWeight: "bold" }}>
+                Instrument
+              </label>
+              <select id="currencyPairs" className="app_input">
+                <option value="EURUSD">--</option>
+                <option value="EURUSD">EUR/USD</option>
+                <option value="USDJPY">USD/JPY</option>
+                <option value="GBPUSD">GBP/USD</option>
+                <option value="USDCHF">USD/CHF</option>
+                <option value="AUDUSD">AUD/USD</option>
+                <option value="USDCAD">USD/CAD</option>
+                <option value="NZDUSD">NZD/USD</option>
+
+                <option value="EURGBP">EUR/GBP</option>
+                <option value="EURAUD">EUR/AUD</option>
+                <option value="GBPJPY">GBP/JPY</option>
+                <option value="AUDJPY">AUD/JPY</option>
+                <option value="NZDJPY">NZD/JPY</option>
+                <option value="CADCHF">CAD/CHF</option>
+              </select>
+            </div>
+            <div className="mt-2">
+              <label htmlFor="" style={{ fontWeight: "bold" }}>
+                Direction
+              </label>
+              <div className="d-flex gap-4">
+
+                <div className="d-flex align-items-center gap-1">
+                  <input type="radio" /><span>Buy</span>
+                </div>
+                <div className="d-flex align-items-center gap-1">
+                  <input type="radio" /><span>Sell</span>
+                </div>
+              </div>
+            </div>
           </div>
-          <div>
-            <p>Trade Entry</p>
+          <hr className="hr" />
+          <div className="mt-3">
+            <p className="m-0">Trade Entry</p>
+            <div className="">
+              <InputField
+                htmlFor={"entry_price"}
+                inputLabel={"Entry Price"}
+                inputId={"entry_price"}
+                inputType={"number"}
+              // inputValue={email}
+              // onChange={(e) => setEmail(e.target.value)}
+              />
+            </div>
+            <div className="mt-2">
+              <InputField
+                htmlFor={"quantity"}
+                inputLabel={"Quantity"}
+                inputId={"quantity"}
+                inputType={"number"}
+              // inputValue={email}
+              // onChange={(e) => setEmail(e.target.value)}
+              />
+            </div>
           </div>
+
+
           <div>
             <p></p>
           </div>

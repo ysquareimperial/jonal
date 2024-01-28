@@ -122,7 +122,6 @@
   }
 }
 
-
 /* App.css */
 .calendar {
   display: grid;
@@ -139,9 +138,30 @@
   justify-content: center;
 }
 
-.danger{
-  background-color: rgb(192, 176, 176), 176, 176);
-  border: 2px solid #C18C8D;
+.danger {
+  background-color: #f6bebf;
+  border: 2px solid #c18c8d;
   border-radius: 3px;
   height: 50px;
+}
+
+.app_input {
+  background-color: white;
+  border: 1px solid rgba(0, 61, 108, 0.47);
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.app_input:focus {
+  outline: 3px solid rgba(0, 61, 108, 0.319) !important;
+  outline-offset: 0px;
+}
+
+.fdf {
+  width: fit-content;
+}
+
+.fdf:focus{
+  outline: none;
 }
